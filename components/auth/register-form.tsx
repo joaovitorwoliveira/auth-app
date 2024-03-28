@@ -1,7 +1,6 @@
 "use client";
 
 import * as z from "zod";
-
 import { useState, useTransition } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -16,11 +15,10 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-
 import { CardWrapper } from "@/components/auth/card-wrapper";
 import { Button } from "@/components/ui/button";
 import { FormError } from "@/components/form-error";
-import { FormSuccess } from "../form-success";
+import { FormSuccess } from "@/components/form-success";
 import { register } from "@/actions/register";
 
 export const RegisterForm = () => {
@@ -115,7 +113,6 @@ export const RegisterForm = () => {
           </div>
           <FormError message={error} />
           <FormSuccess message={success} />
-
           <Button disabled={isPending} type="submit" className="w-full">
             Criar conta
           </Button>
