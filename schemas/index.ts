@@ -1,5 +1,11 @@
 import * as z from "zod";
 
+export const ResetSchema = z.object({
+  email: z.string().email({
+    message: "Por favor, insira um email válido",
+  }),
+});
+
 export const LoginSchema = z.object({
   email: z.string().email({
     message: "Por favor, insira um email válido",
