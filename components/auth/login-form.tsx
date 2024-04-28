@@ -32,7 +32,7 @@ export const LoginForm = () => {
       ? "Email já em uso com provedor de Login diferente"
       : "";
 
-  const [showTwoFactor, setSwhoTwoFactor] = useState<boolean>(false);
+  const [showTwoFactor, setShowTwoFactor] = useState<boolean>(false);
   const [error, setError] = useState<string | undefined>("");
   const [success, setSuccess] = useState<string | undefined>("");
   const [isPending, startTransition] = useTransition();
@@ -63,7 +63,7 @@ export const LoginForm = () => {
           }
 
           if (data?.twoFactor) {
-            setSwhoTwoFactor(true);
+            setShowTwoFactor(true);
           }
         })
         .catch(() => setError("Erro ao fazer login"));
