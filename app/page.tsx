@@ -23,7 +23,7 @@ export default function Home() {
         </h1>
         <p className="text-white text-lg">Um app de autenticação!</p>
         <div>
-          <LoginButton>
+          <LoginButton mode="modal" asChild>
             <Button variant="secondary" size="lg">
               Entrar!
             </Button>
@@ -33,3 +33,4 @@ export default function Home() {
     </main>
   );
 }
+8;

@@ -34,19 +34,23 @@ const AdminPage = () => {
   return (
     <Card className="w-[600px]">
       <CardHeader>
-        <p className="text-2xl font-semibold text-center">🔑 Admin</p>
+        <p className="text-2xl font-semibold text-center">🔑 Administrador</p>
       </CardHeader>
       <CardContent className="space-y-4">
         <RoleGate allowedRole={UserRole.ADMIN}>
           <FormSuccess message="Você consegue ver este conteúdo!" />
         </RoleGate>
         <div className="flex flex-row items-center justify-between rounded-lg border p-3 shadow-md">
-          <p className="text-sm font-medium">Admin-olny API Route</p>
-          <Button onClick={onApiRouteClick}>Click para testar</Button>
+          <p className="text-sm font-medium">
+            Rota da API para Administradores
+          </p>
+          <Button onClick={onApiRouteClick}>Clique para testar</Button>
         </div>
         <div className="flex flex-row items-center justify-between rounded-lg border p-3 shadow-md">
-          <p className="text-sm font-medium">Admin-only Server Action</p>
-          <Button onClick={onServerActionClick}>Click para testar</Button>
+          <p className="text-sm font-medium">
+            Ação no Servidor para Administradores
+          </p>
+          <Button onClick={onServerActionClick}>Clique para testar</Button>
         </div>
       </CardContent>
     </Card>
