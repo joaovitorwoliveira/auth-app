@@ -71,7 +71,7 @@ const SettingsPage = () => {
   };
 
   return (
-    <Card className="w-[600px]">
+    <Card className="sm:w-full md:w-3/4 lg:w-1/2 ">
       <CardHeader>
         <p className="text-2xl font-semibold text-center">⚙️ Configurações</p>
       </CardHeader>
@@ -214,4 +214,3 @@ const SettingsPage = () => {
   );
 };
 export default SettingsPage;
-// export { SettingsPage as default };

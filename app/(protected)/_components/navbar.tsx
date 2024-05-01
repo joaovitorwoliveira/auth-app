@@ -9,8 +9,8 @@ export const Navbar = () => {
   const pathName = usePathname();
 
   return (
-    <nav className="bg-secondary flex justify-between items-center p-4 rounded-xl w-[600px] shadow-sm">
-      <div className="flex gap-x-2">
+    <nav className="bg-secondary flex justify-between items-center p-4 rounded-xl sm:w-full md:w-3/4 lg:w-1/2 shadow-sm">
+      <div className="flex gap-x-2 md:flex-grow flex-wrap">
         <Button asChild variant={pathName === "/admin" ? "default" : "outline"}>
           <Link href="/admin">Administrador</Link>
         </Button>
