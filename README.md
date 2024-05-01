@@ -22,7 +22,7 @@ O Auth App é um aplicativo web desenvolvido para explorar e aprimorar habilidad
 
 ## APP em Produção:
 
-[Auth App]([(https://auth-app-five-flax.vercel.app/)) 
+[Auth App](https://auth-app-five-flax.vercel.app/) 
 
 ## Autor
 
