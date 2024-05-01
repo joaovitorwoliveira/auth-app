@@ -29,6 +29,18 @@ export default function Home() {
             </Button>
           </LoginButton>
         </div>
+        <div>
+          <h1 className="text-white text-xs mt-10 drop-shadow-md">
+            Desenvolvido por{" "}
+            <a
+              href="http://www.linkedin.com/in/joaovitorwoliveira"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              João Vitor Oliveira
+            </a>
+          </h1>
+        </div>
       </div>
     </main>
   );
